@@ -1,0 +1,8 @@
+.casess{
+    display:flex;
+
+    flex-direction: column;
+}
+.tableSection{
+    margin: 1rem 2rem;
+}
