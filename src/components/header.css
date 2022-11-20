@@ -1,0 +1,28 @@
+.headersection{
+    height: 20vh;
+    /* background-color: #176A5D; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.cyhealthheader > h2{
+font-size: 40px;
+}
+.cy{
+    color: #176A5D;
+}
+.links{
+    display: flex;
+}
+.links li{
+    margin: 1rem;
+    padding: .6rem 1rem;
+    cursor: pointer;
+    border-radius: 10px;
+    font-weight: 800;
+}
+.links li:hover{
+background-color: #176A5D;
+color: white;
+}

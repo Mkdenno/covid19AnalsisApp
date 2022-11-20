@@ -28,7 +28,7 @@ const Table = ({ stats}) => {
 	)})
 
 	return (
-		<>
+		<section id='statistics'>
 			<div className=" mx-auto tableSection">
 
 				<div className="relative overflow-x-auto shadow-md sm:rounded-lg">
@@ -83,7 +83,7 @@ const Table = ({ stats}) => {
 					</table>
 				</div>
 			</div>
-		</>
+		</ section>
 	)
 }
 

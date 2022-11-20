@@ -1,5 +1,6 @@
 import Home from "./components/Home";
 import React , { useState, useEffect } from "react";
+import Header from "./components/Header";
 
 function App() {
 
@@ -41,7 +42,7 @@ function App() {
 
   useEffect(() => {
     setIsLoading(true);
-    fetch("https://covid-193.p.rapidapi.com/history?country=usa", historyOption)
+    fetch("https://covid-193.p.rapidapi.com/history?country=kenya", historyOption)
       .then((res) => res.json())
       .then((data) => {
         setData(data.response)
@@ -52,6 +53,7 @@ function App() {
   }, [])
   return (
     <div className="App">
+      <Header/>
       <Home stats={stats} isLoading={isLoading} data={data}/>
     </div>
   );

@@ -1,13 +1,13 @@
 import React from "react"
 import './chart.css'
-import {Chart as ChartJS,  registerables} from 'chart.js'
+import { Chart as ChartJS, registerables } from 'chart.js'
 import { Line } from "react-chartjs-2"
 ChartJS.register(...registerables);
 
 
 
-const ChartSection = ({data,isLoading}) => {
-  const deaths=data.map((dead)=>{
+const ChartSection = ({ data, isLoading }) => {
+  const deaths = data.map((dead) => {
     return dead.deaths.total
   })
   console.log(deaths)
@@ -21,7 +21,7 @@ const ChartSection = ({data,isLoading}) => {
   })
 
   const label = data.map((dat) => {
-    return dat.time.slice(11,-9)
+    return dat.time.slice(11, -9)
   })
 
   const chart = {
@@ -47,27 +47,30 @@ const ChartSection = ({data,isLoading}) => {
         fill: false
       },
     ],
-    
+
   }
-  
+
   return (
-    <div className="chartsection">
-      <h1>Hourly graph of showing covid-19 history</h1>
+    <section id="chart">
+      <div className="chartsection">
+        <h1>Hourly graph of showing covid-19 history</h1>
 
-<div style={{width: "80%"}}>
-  {
-    isLoading ? 
-    <div className="loaderImage"> 
-           <img src= "./images/loader.gif" width={300}/>
-    </div>
-    :
-<Line data={chart} />
+        <div style={{ width: "80%" }}>
+          {
+            isLoading ?
+              <div className="loaderImage">
+                <img src="./images/loader.gif" width={300} />
+              </div>
+              :
+              <Line data={chart} />
 
-    
-  }
 
-</div>
-    </div>
+          }
+
+        </div>
+      </div>
+    </section>
+
   )
 }
 
