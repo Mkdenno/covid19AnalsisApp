@@ -32,6 +32,7 @@ const Table = ({ stats}) => {
 			<div className=" mx-auto tableSection">
 
 				<div className="relative overflow-x-auto shadow-md sm:rounded-lg">
+					<h1>Covid19 statistics </h1>
 					<div className="p-4">
 						<label for="table-search" className="sr-only">Search</label>
 						<div className="relative mt-1">

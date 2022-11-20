@@ -7,7 +7,8 @@ const Statistic = ({ continent,
     deaths,
     tests,
     day,
-    time }) => {
+    time,
+}) => {
 
     return (
         <>
@@ -41,7 +42,7 @@ const Statistic = ({ continent,
 
                             </th>
                             <th scope="col" class="px-6 py-3">
-                                1M_pop: <span className='cased'>{ cases['1M_pop']}</span>
+                                1M_pop: <span className='cased'>{cases['1M_pop']}</span>
                             </th>
                             <th scope="col" class="px-6 py-3">
                                 total: <span className='cased'> {cases.total}</span>
@@ -52,7 +53,7 @@ const Statistic = ({ continent,
                     <td class="px-6 py-4">
                         <div className='casess'>
                             <th scope="col" class="px-6 py-3">
-                            new: <span className='cased'>{deaths.new}</span>
+                                new: <span className='cased'>{deaths.new}</span>
                             </th>
                             <th scope="col" class="px-6 py-3">
                                 1M_pop: <span className='cased'>{deaths['1M_pop']}</span>

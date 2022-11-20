@@ -1,0 +1,15 @@
+.chartsection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.chartsection h1{
+    margin: 2rem 0;
+}
+.loaderImage{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
