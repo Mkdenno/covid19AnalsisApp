@@ -42,7 +42,7 @@ function App() {
 
   useEffect(() => {
     setIsLoading(true);
-    fetch("https://covid-193.p.rapidapi.com/history?country=kenya", historyOption)
+    fetch("https://covid-193.p.rapidapi.com/history?country=usa", historyOption)
       .then((res) => res.json())
       .then((data) => {
         setData(data.response)
